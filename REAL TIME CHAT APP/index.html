@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatSphere</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ChatSphere</div>
+    </header>
+    <div class="container">
+        <div class="user-list">
+            <div class="user" onclick="selectUser('Alice')">
+                <img src="https://via.placeholder.com/50?text=Alice" alt="Alice" class="profile-pic">
+                <div class="user-name">Alice</div>
+            </div>
+            <div class="user" onclick="selectUser('Bob')">
+                <img src="https://via.placeholder.com/50?text=Bob" alt="Bob" class="profile-pic">
+                <div class="user-name">Bob</div>
+            </div>
+            <div class="user" onclick="selectUser('Charlie')">
+                <img src="https://via.placeholder.com/50?text=Charlie" alt="Charlie" class="profile-pic">
+                <div class="user-name">Charlie</div>
+            </div>
+            <div class="user" onclick="selectUser('Diana')">
+                <img src="https://via.placeholder.com/50?text=Diana" alt="Diana" class="profile-pic">
+                <div class="user-name">Diana</div>
+            </div>
+            <div class="user" onclick="selectUser('Ethan')">
+                <img src="https://via.placeholder.com/50?text=Ethan" alt="Ethan" class="profile-pic">
+                <div class="user-name">Ethan</div>
+            </div>
+            <div class="user" onclick="selectUser('Fiona')">
+                <img src="https://via.placeholder.com/50?text=Fiona" alt="Fiona" class="profile-pic">
+                <div class="user-name">Fiona</div>
+            </div>
+            <div class="user" onclick="selectUser('George')">
+                <img src="https://via.placeholder.com/50?text=George" alt="George" class="profile-pic">
+                <div class="user-name">George</div>
+            </div>
+            <div class="user" onclick="selectUser('Hannah')">
+                <img src="https://via.placeholder.com/50?text=Hannah" alt="Hannah" class="profile-pic">
+                <div class="user-name">Hannah</div>
+            </div>
+            <div class="user" onclick="selectUser('Ian')">
+                <img src="https://via.placeholder.com/50?text=Ian" alt="Ian" class="profile-pic">
+                <div class="user-name">Ian</div>
+            </div>
+            <div class="user" onclick="selectUser('Julia')">
+                <img src="https://via.placeholder.com/50?text=Julia" alt="Julia" class="profile-pic">
+                <div class="user-name">Julia</div>
+            </div>
+        </div>
+        <div class="chat-window">
+            <div class="chat-area">
+                <div class="chat-messages"></div>
+            </div>
+            <div class="user-input">
+                <input type="text" id="message-input" placeholder="Type a message...">
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

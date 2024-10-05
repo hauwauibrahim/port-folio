@@ -1,0 +1,76 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --hue-neutral: rgb(246, 199, 223);
+    --hue-wrong: rgb(253, 83, 145); 
+    --hue-correct: rgb(247, 207, 228); 
+}
+
+body {
+    background-color: rgb(255, 182, 193);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 800px;
+    max-width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    border: 1px solid rgb(236, 195, 215);
+    background-color: rgb(255, 105, 180);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(249, 205, 229);
+}
+
+.btn.correct {
+    background-color: rgb(247, 207, 228); /* Correct shade */
+    color: black;
+}
+
+.btn.wrong {
+    background-color: rgb(253, 83, 145); /* Darker shade for wrong answers */
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
